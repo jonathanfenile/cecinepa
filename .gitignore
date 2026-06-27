@@ -1,0 +1,22 @@
+# Arquivos temporários do LaTeX
+*.aux
+*.bbl
+*.blg
+*.brf
+*.bcf
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.log
+*.out
+*.run.xml
+*.toc
+*.synctex.gz
+*.pdf
+
+# Configurações do VS Code
+.vscode/
