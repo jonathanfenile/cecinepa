@@ -1,0 +1,21 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{meus-comandos}[2026/07/15 Macros personalizadas do Jonathan]
+
+% Carrega os pacotes necessários para as macros funcionarem
+\RequirePackage{xparse}
+
+% ---------------------------------------------------------
+% Macro \encruza
+% ---------------------------------------------------------
+\NewDocumentCommand{\encruza}{m}{%
+    \textbf{%
+        \underline{\textbackslash X/}~%
+        #1~%
+        \underline{\textbackslash X/}%
+    }%
+}
+
+% Adicione outras macros abaixo conforme você for desenvolvendo:
+% \NewDocumentCommand{\suaOutraMacro}{m}{...}
+
+\endinput

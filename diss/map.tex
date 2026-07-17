@@ -1,0 +1,98 @@
+\documentclass[
+    12pt,				% Tamanho da fonte
+    openright,			% Capítulos começam em página ímpar
+    oneside,			% Para leitura digital
+    a4paper,			% Tamanho do papel
+    english,			% Idioma adicional para os abstracts
+    brazilian				% O idioma principal do documento
+]{abntex2}
+
+% --- Pacotes Básicos ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Seleção de códigos de fonte
+\usepackage[utf8]{inputenc}		% Codificação do documento (conversão de acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos/figuras
+\usepackage{microtype} 			% Para melhoria da justificação do texto
+\usepackage[alf]{abntex2cite}	% Citações no padrão ABNT (Autor-data)
+
+% --- Macros customizadas ---
+\makeatletter
+\def\input@path{{../}}
+\makeatother
+\usepackage{macros}
+
+% --- Informações do Trabalho (Metadados) ---
+\titulo{Como Falar Cientificamente?\\ \large Uma análise das controvérsias epistêmicas em torno de Nego Bispo}
+\autor{Jonathan Fenile de Castro}
+\local{Campinas}
+\data{2026}
+\orientador{Susana Oliveira Dias}
+% \coorientador{Nome do Coorientador, se houver}
+\instituicao{%
+  Universidade Estadual de Campinas -- UNICAMP
+  \par
+  Instituto de Estudos da Linguagem -- IEL
+  \par
+  Programa de Pós-Graduação em Divulgação Científica e Cultural}
+\tipotrabalho{Dissertação (Mestrado)}
+\preambulo{Dissertação apresentada ao Programa de Pós-Graduação em Divulgação Científica e Cultural do Instituto de Estudos da Linguagem da Universidade Estadual de Campinas como parte dos requisitos exigidos para a obtenção do título de Mestre.}
+
+% --- Configurações de Aparência e Links ---
+\definecolor{blue}{RGB}{41,128,185}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdfauthor={Jonathan Fenile de Castro},
+    pdfcreator={LaTeX with abnTeX2}
+}
+
+% --- Configurações de Espaçamento ---
+\setlength{\parindent}{1.3cm} % Tamanho do parágrafo
+\setlength{\parskip}{0.2cm}   % Espaçamento entre parágrafos
+
+% --- Início do Documento ---
+\begin{document}
+\selectlanguage{brazil}
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \imprimircapa
+% \imprimirfolhaderosto
+
+% Nota: Elementos como Resumo, Abstract, Listas de Figuras e Tabelas
+% podem ser inseridos aqui futuramente através do comando \include{}
+
+% Sumário
+% \pdfbookmark[0]{\contentsname}{toc}
+% \tableofcontents*
+% \cleardoublepage
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+\include{1-intro/map}
+\include{2-toalha/map}
+\include{3-colheita/map}
+\include{4-picnic/map}
+\include{5-migalhas/map}
+\include{6-recolhida/map}
+\include{7-retorno/map}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+% \postextual
+
+% Referências bibliográficas (chama o arquivo referencias.bib)
+% \bibliography{referencias}
+
+\end{document}

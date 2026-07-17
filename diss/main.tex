@@ -1,10 +1,10 @@
 \documentclass[
     12pt,				% Tamanho da fonte
     openright,			% Capítulos começam em página ímpar
-    twoside,			% Para impressão em frente e verso
+    oneside,			% Para leitura digital
     a4paper,			% Tamanho do papel
     english,			% Idioma adicional para os abstracts
-    brazil				% O idioma principal do documento
+    brazilian				% O idioma principal do documento
 ]{abntex2}
 
 % --- Pacotes Básicos ---
@@ -16,6 +16,12 @@
 \usepackage{graphicx}			% Inclusão de gráficos/figuras
 \usepackage{microtype} 			% Para melhoria da justificação do texto
 \usepackage[alf]{abntex2cite}	% Citações no padrão ABNT (Autor-data)
+
+% --- Macros customizadas ---
+\makeatletter
+\def\input@path{{../}}
+\makeatother
+\usepackage{macros}
 
 % --- Informações do Trabalho (Metadados) ---
 \titulo{Como Falar Cientificamente?\\ \large Uma análise das controvérsias epistêmicas em torno de Nego Bispo}
