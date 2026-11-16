@@ -1,0 +1,103 @@
+% Opcoes editoriais de trabalho, nao medidas impostas pela revista:
+% A4, 12 pt, margens de 2,5 cm, entrelinha 1,5, Latin Modern.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\IfFileExists{portuguese.ldf}{%
+  \usepackage[portuguese,english]{babel}
+}{%
+  \usepackage[english]{babel}
+  % Se os padroes portugueses nao estiverem instalados, nao aplicar
+  % hifenizacao inglesa aos trechos em portugues.
+  \babelprovide[import,hyphenrules=nohyphenation]{portuguese}
+}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[autostyle=false,style=english]{csquotes}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+\usepackage{xparse}
+\usepackage{needspace}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{xurl}
+\usepackage[hidelinks,unicode]{hyperref}
+\urlstyle{same}
+\hypersetup{
+  pdftitle={How to talk about the Anthropocene? A Science-bar essay towards ancestral futures},
+  pdfauthor={},
+  pdfsubject={Essay manuscript},
+  pdfkeywords={Anthropocene, Bruno Latour, common world, ancestral futures}
+}
+
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\raggedbottom
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.6em}{}
+\titlespacing*{\section}{0pt}{2em}{0.8em}
+\renewcommand{\thesection}{\Roman{section}}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.25em,topsep=0.4em}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.25em,topsep=0.4em}
+
+% Conteudo editorial: completamente removido no modo sem orientacoes.
+\definecolor{guideline}{HTML}{BDC6CB}
+\definecolor{guidefill}{HTML}{F4F6F7}
+\NewDocumentEnvironment{orientacao}{m +b}{%
+  \iforientacoes
+    \begin{tcolorbox}[enhanced,breakable,colback=guidefill,colframe=guideline,
+      boxrule=0.35pt,arc=0pt,left=9pt,right=9pt,top=7pt,bottom=7pt,
+      before skip=1em,after skip=1em,
+      title={#1},colbacktitle=guidefill,coltitle=black,
+      fonttitle=\normalfont\sffamily\bfseries\small,
+      fontupper=\normalfont\small]
+      \selectlanguage{portuguese}\raggedright
+      \setstretch{1.13}\setlength{\parindent}{0pt}\setlength{\parskip}{0.4em}
+      #2
+    \end{tcolorbox}
+  \fi
+}{}
+
+% Atos: narrativa ficcional, sem aspas de citacao de fonte externa.
+\newcounter{ato}[section]
+\NewDocumentEnvironment{ato}{m}{%
+  \refstepcounter{ato}
+  \par\addvspace{1.2em}
+  \noindent\begin{minipage}{\linewidth}
+  \noindent\textbf{Act \Roman{ato}. #1}\par\smallskip
+  \begingroup\itshape\setstretch{1.2}
+  \setlength{\parindent}{0pt}\setlength{\parskip}{0.35em}
+}{\par\endgroup\end{minipage}\par\medskip}
+
+% Uma chave centraliza a nota curta e a referencia completa.
+% O argumento opcional de \fonte recebe o localizador ja formatado.
+\newcommand{\declararobra}[3]{%
+  \csdef{curta@#1}{#2}\csdef{completa@#1}{#3}}
+\newcommand{\usarobra}[1]{\csgdef{usada@#1}{1}}
+\newcommand{\refobra}[1]{%
+  \ifcsdef{curta@#1}{\usarobra{#1}\csuse{curta@#1}}{%
+    \PackageError{sciencebar}{Referencia desconhecida: #1}{Cadastre a chave em referencias.tex.}}}
+\NewDocumentCommand{\fonte}{O{} m}{%
+  \footnote{\refobra{#2}\ifstrempty{#1}{}{, #1}.}}
+\newcommand{\entradaobra}[1]{%
+  \iforientacoes
+    \par\noindent\hangindent=1.25cm\hangafter=1\csuse{completa@#1}\par\medskip
+  \else
+    \ifcsdef{usada@#1}{%
+      \par\noindent\hangindent=1.25cm\hangafter=1\csuse{completa@#1}\par\medskip}{}
+  \fi}
+
+% As aspas sao visiveis e deliberadas; o texto explica sua funcao.
+\newcommand{\anthropocene}{\enquote{Anthropocene}}
+\newcommand{\sciencebar}{Science-bar}
+
+% Espaco para atos ainda nao escritos nas partes II e III.
+% Ao escrever, substituir \atoplanejado por \begin{ato} ... \end{ato}.
+\newcommand{\atoplanejado}[2]{%
+  \begin{orientacao}{Ato #1 --- a escrever}#2\end{orientacao}}

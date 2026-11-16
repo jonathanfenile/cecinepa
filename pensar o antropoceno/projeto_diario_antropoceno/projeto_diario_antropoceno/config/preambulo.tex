@@ -1,0 +1,47 @@
+% Escolhas editoriais deste projeto, e não medidas impostas pela revista:
+% A4; margens de 2,5 cm; corpo 12; entrelinhas 1,5; notas 10, simples.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,brazil]{babel}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage[hang,flushmargin,bottom]{footmisc}
+\usepackage{needspace}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{xurl}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{csquotes}
+\hypersetup{pdfauthor={},pdfsubject={},pdfkeywords={},pdftitle={}}
+\onehalfspacing
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+\setlength{\footnotemargin}{1.5em}
+\setlength{\footnotesep}{8pt}
+\setlength{\skip\footins}{14pt plus 3pt minus 2pt}
+\renewcommand{\footnotesize}{\fontsize{10}{12}\selectfont}
+% Notas extensas podem continuar na página seguinte, em vez de transbordar.
+% Um valor maior procura manter cada nota unida; não use 10000 para notas longas.
+\interfootnotelinepenalty=100
+\setcounter{secnumdepth}{0}
+\titleformat{\section}{\normalfont\normalsize\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{1.1\baselineskip}{0.5\baselineskip}
+\titlespacing{\subsection}{0pt}{0.9\baselineskip}{0.35\baselineskip}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}
+  {\fontsize{16}{20}\selectfont\bfseries\@title\par}
+  \end{center}
+  \vspace{0.5\baselineskip}}
+\makeatother
+\AtBeginEnvironment{quote}{\singlespacing\small}
+\AtBeginEnvironment{quotation}{\singlespacing\small}
+\AtBeginEnvironment{description}{\singlespacing}
+\pretocmd{\subsection}{\Needspace{5\baselineskip}}{}{}
+\emergencystretch=1.5em
+\widowpenalty=1000
+\clubpenalty=1000
+\urlstyle{same}

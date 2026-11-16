@@ -1,0 +1,56 @@
+% Arquivo principal. Compilador: pdfLaTeX. Nao requer BibTeX ou Biber.
+\documentclass[12pt,a4paper]{article}
+
+% true: exibe orientacoes em portugues e todos os titulos de trabalho.
+% false: oculta orientacoes e espacos vazios das partes ainda nao escritas.
+\newif\iforientacoes
+\orientacoestrue
+% Permite verificar o modo limpo pela linha de comando, sem editar o arquivo.
+\ifdefined\SemOrientacoes\orientacoesfalse\fi
+
+\input{preambulo}
+\input{referencias}
+
+\title{How to talk about the Anthropocene?\\[0.35em]
+  \large A Science-bar essay towards ancestral futures}
+\author{} % Avaliacao anonima: preencher dados_autoria.tex separadamente.
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-2.5em}
+
+\begin{orientacao}{Como trabalhar neste arquivo}
+Este documento retoma a proposta de sete atos para \textit{Crisis}.
+Os atos estão redigidos em inglês; os parágrafos acadêmicos são inícios
+provisórios de redação, a desenvolver. As caixas em português contêm
+orientações editoriais. A hipótese do ensaio aparece como proposta de quem
+escreve, distinguida das ideias atribuídas às fontes.
+
+Altere \texttt{\string\orientacoestrue} para
+\texttt{\string\orientacoesfalse} em \texttt{main.tex} para ocultar as
+caixas e os espaços ainda vazios. Essa operação produz uma leitura sem
+anotações; não transforma o rascunho em artigo concluído. Os resumos
+também são versões provisórias. Veja \texttt{README.md} para compilar,
+inserir notas e preparar o arquivo de submissão.
+\end{orientacao}
+
+\input{resumos}
+\input{partes/01-crisis}
+\input{partes/02-quotation-marks}
+\input{partes/03-ancestral-futures}
+
+\clearpage
+\section*{Works Cited}
+\begin{orientacao}{Bibliografia de trabalho}
+No modo orientado, aparecem as referências preparadas para as três partes.
+No modo sem orientações, aparecem somente as obras chamadas por
+\texttt{\string\fonte} ou \texttt{\string\refobra} no texto visível.
+Confira os localizadores de cada passagem na edição efetivamente utilizada.
+Nos livros digitais sem paginação estável, use capítulo ou seção: o número
+da página do visualizador de PDF não equivale necessariamente à página da
+edição. As entradas estão em ordem alfabética e as notas usam autor e
+título abreviado, conforme os exemplos da revista.
+\end{orientacao}
+\imprimirreferencias
+\end{document}

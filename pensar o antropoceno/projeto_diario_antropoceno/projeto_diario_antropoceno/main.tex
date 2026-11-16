@@ -1,0 +1,24 @@
+% Arquivo principal. Compile com pdfLaTeX, duas vezes.
+% O manuscrito é anônimo. Os dados pessoais ficam em autoria.tex, separado.
+\documentclass[12pt,a4paper]{article}
+\input{config/preambulo}
+% Comandos simples, também reconhecidos na exportação para Word.
+\input{config/comandos}
+\input{dados}
+
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+
+\input{texto/resumos}
+\newpage
+\input{texto/diario}
+
+\section*{Referências}
+\begingroup
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6\baselineskip}
+\input{referencias}
+\par
+\endgroup
+\end{document}
