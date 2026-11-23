@@ -1,0 +1,49 @@
+COMO FALAR DO “ANTROPOCENO”? — EDIÇÃO DE TRABALHO
+
+O ZIP é uma atualização para o projeto que você já usa. Copie texto/diario.tex para
+o lugar do diário, guardando a sua versão anterior. Acrescente à pasta notas/
+os dez arquivos fornecidos, inclusive os dois de notas/refs/. Mescle as pastas:
+as outras 66 chamadas do seu arquivo continuam ativas e precisam de seus próprios
+arquivos. Não substitua nem apague sua pasta notas/. Compile a partir de main.tex.
+
+No VS Code, procure por [REVISÃO, [DISCURSO, [BISPO IMAGINADO ou [RODAPÉ NOVO.
+As linhas comentadas com % não aparecem no PDF e podem ficar no manuscrito
+de trabalho. As formulações imaginadas são ficção de leitura, inspirada
+especialmente em A terra dá, a terra quer e em “Somos da terra”. Não são
+declarações, citações, pareceres ou endossos reais de Antônio Bispo dos Santos.
+
+Os arquivos de nota contêm minutas editáveis. A primeira linha de cada um
+indica sua função; a instrução de escrita fica em comentário. Para descartar
+uma das propostas, basta remover do texto a respectiva chamada de nota.
+Para as propostas de reformulação, a decisão de substituir é sempre sua.
+O corpo do diário foi mantido tal como enviado, excetuando-se as novas chamadas.
+
+O mapa anexo registra as 76 chamadas, na ordem de aparição e por data. Ele
+distingue os arquivos já chamados pelo diário dos que acompanham esta revisão;
+os números ali indicam ordem, não numeração fixa de rodapé.
+
+revisao/referencias_para_incorporar.tex contém as fichas das fontes externas
+usadas pelas novas notas. Copie só as das notas que mantiver para a sua
+lista, por ordem alfabética. As fontes presentes apenas nas margens editoriais
+não precisam entrar no manuscrito se você não as usar. O resumo, o abstract,
+o preâmbulo e a bibliografia atual não faziam parte do .tex enviado.
+
+PONTOS DE CONFERÊNCIA PARA AS NOTAS QUE JÁ ESTÃO NO DIÁRIO
+
+• Carneiro da Cunha, “«Cultura» e cultura: conhecimentos tradicionais e direitos
+  intelectuais”, início de “Uma primeira história”. A fala do chefe yawanawa
+  é em português. Confira a paginação no seu exemplar antes de fechar a nota.
+• Latour, “How to Talk About the Body?”, no episódio do kit: duração, ordem dos
+  contrastes e instrumento do químico. https://doi.org/10.1177/1357034X04042943
+• Santos, Antônio Bispo dos. A terra dá, a terra quer. Ubu Editora e Piseagrama,
+  2023. Para confronto com a discussão sobre tradutores e território, ver também
+  o texto assinado “Somos da terra”: https://piseagrama.org/artigos/somos-da-terra/
+• Sobre nomes no Ártico: Lawrence Kaplan, “Inuit or Eskimo: Which Name to Use?”,
+  Alaska Native Language Center. Não generalize uma única autodenominação para
+  todos os povos do título histórico de Mauss.
+  https://www.uaf.edu/anlc/research-and-resources/resources/archives/inuit_or_eskimo.php
+• Foucault, “Des espaces autres”: contralugar e sua relação com os lugares que
+  representa, contesta ou inverte. Distinga o conceito de sua extensão especulativa.
+  https://foucault.info/documents/heterotopia/foucault.heteroTopia.fr/
+• Para a diagramação e a cópia cega: diretrizes da própria revista.
+  https://periodicos.unb.br/index.php/dasquestoes/about/submissions

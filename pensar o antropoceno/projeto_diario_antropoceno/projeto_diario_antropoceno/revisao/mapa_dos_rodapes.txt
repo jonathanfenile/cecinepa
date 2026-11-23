@@ -1,0 +1,126 @@
+MAPA DOS RODAPÉS | 16 entradas | 76 chamadas
+66 ORIGINAIS: já chamadas no .tex recebido; não integram o ZIP.
+10 NOVAS: chamadas e arquivos incluídos nesta revisão. Ordem de leitura.
+
+SOMENTE AS NOVAS
+N01  notas/diferenca-e-acesso-a-direitos.tex
+N02  notas/da-maquina-a-vapor-ao-plutonio.tex
+N03  notas/agencia-e-responsabilidade.tex
+N04  notas/refs/haraway-e-os-nomes.tex
+N05  notas/signo-e-referente.tex
+N06  notas/uma-fala-dois-rodapes.tex
+N07  notas/fila-e-vez.tex
+N08  notas/refs/dois-turnos.tex
+N09  notas/traduzir-sem-garantir-acordo.tex
+N10  notas/prova-do-odor.tex
+
+INVENTÁRIO COMPLETO
+
+16 de outubro de 2026 — Pensar a comunicação
+01  ORIGINAL    notas/latour-posmod.tex
+02  ORIGINAL    notas/ic.tex
+03  ORIGINAL    notas/latour-estab.tex
+04  ORIGINAL    notas/mundo-doente.tex
+05  NOVA N01    notas/diferenca-e-acesso-a-direitos.tex
+06  ORIGINAL    notas/peixoto.tex
+
+17 de outubro de 2026 — Pensar o Antropoceno
+07  NOVA N02    notas/da-maquina-a-vapor-ao-plutonio.tex
+08  ORIGINAL    notas/antropocenicos.tex
+09  NOVA N03    notas/agencia-e-responsabilidade.tex
+10  ORIGINAL    notas/bispo-confluencias.tex
+
+18 de outubro de 2026 — Retornar ao que foi comunicado
+11  ORIGINAL    notas/paragrafo.tex
+12  ORIGINAL    notas/refs/a-terra-da.tex
+13  ORIGINAL    notas/manuela_brasileira.tex
+14  ORIGINAL    notas/refs/var-sazonais.tex
+15  ORIGINAL    notas/inuit.tex
+16  ORIGINAL    notas/mauss-bispo-geracoes.tex
+17  ORIGINAL    notas/bispo-casas-de-farinha.tex
+18  ORIGINAL    notas/mauss-bispo-construcoes.tex
+19  ORIGINAL    notas/refs/futuro-ancestral.tex
+20  ORIGINAL    notas/cosmofobia.tex
+
+19 de outubro de 2026 — Semeaduras
+21  ORIGINAL    notas/manuela-honi.tex
+22  ORIGINAL    notas/refs/a-terra-da-defesa.tex
+23  ORIGINAL    notas/manuela-ocasiao.tex
+24  ORIGINAL    notas/manuela-estrangeirismo.tex
+25  ORIGINAL    notas/latour-mistura.tex
+26  ORIGINAL    notas/hibridos.tex
+27  NOVA N04    notas/refs/haraway-e-os-nomes.tex
+28  ORIGINAL    notas/dif-ancestral-emergente.tex
+
+20 de outubro de 2026 — Uma patologia da comunicação
+29  ORIGINAL    notas/refs/how-to-talk.tex
+30  ORIGINAL    notas/nariz.tex
+31  ORIGINAL    notas/artificio.tex
+32  ORIGINAL    notas/sujeito.tex
+33  ORIGINAL    notas/hibridos-perdidos.tex
+34  ORIGINAL    notas/criticos-bispo.tex
+35  NOVA N05    notas/signo-e-referente.tex
+
+21 de outubro de 2026 — Forma
+36  ORIGINAL    notas/localizacao-rodapes.tex
+37  NOVA N06    notas/uma-fala-dois-rodapes.tex
+38  ORIGINAL    notas/open-source-ite.tex
+
+22 de outubro de 2026 — Cultura com aspas
+39  ORIGINAL    notas/refs/cultura.tex
+40  ORIGINAL    notas/corpo-com-aspas.tex
+41  ORIGINAL    notas/latour-constituicao.tex
+42  ORIGINAL    notas/exo-antropoceno.tex
+
+23 de outubro de 2026 — O piquenique cósmico
+43  ORIGINAL    notas/refs/cultura-cultura-universal.tex
+
+24 de outubro de 2026 — O paradoxo da cosmofobia
+44  ORIGINAL    notas/paradoxo-da-tolerancia.tex
+
+25 de outubro de 2026 — Os antropocênicos e suas filas
+45  NOVA N07    notas/fila-e-vez.tex
+46  ORIGINAL    notas/carta-de-intencoes.tex
+47  ORIGINAL    notas/piquenique-cosmico.tex
+48  ORIGINAL    notas/cecinepa.tex
+
+26 de outubro de 2026 — Um ponto de virada?
+49  NOVA N08    notas/refs/dois-turnos.tex
+50  ORIGINAL    notas/refs/hasselmann.tex
+51  ORIGINAL    notas/estrutura-superestrutura.tex
+52  ORIGINAL    notas/pobreza-criada.tex
+
+06 de novembro de 2026 — Atravessamentos
+53  ORIGINAL    notas/multitao-pesquisas.tex
+54  ORIGINAL    notas/apresentacao-cecinepa.tex
+55  ORIGINAL    notas/latour-arquipelago.tex
+56  ORIGINAL    notas/saber-afeto.tex
+57  ORIGINAL    notas/saber-laco.tex
+58  ORIGINAL    notas/latour-epistemologia-politica.tex
+
+07 de novembro de 2026 — Uma insistência
+(Sem chamadas de rodapé nesta entrada.)
+
+08 de novembro de 2026 — Uma heterotopia
+59  ORIGINAL    notas/heterotopia.tex
+60  ORIGINAL    notas/linha-de-fuga.tex
+
+09 de novembro de 2026 — [sem título no original]
+61  ORIGINAL    notas/foucault-jesuitas.tex
+62  ORIGINAL    notas/praca-publica.tex
+63  ORIGINAL    notas/manuela-reivindicacao-pajes.tex
+64  NOVA N09    notas/traduzir-sem-garantir-acordo.tex
+65  ORIGINAL    notas/as-palavras-e-as-coisas.tex
+
+15 de novembro de 2026 — [sem título no original]
+66  ORIGINAL    notas/virtualmente-livre.tex
+67  ORIGINAL    notas/humanismo.tex
+68  ORIGINAL    notas/limitacoes-humanistas.tex
+69  ORIGINAL    notas/metrica-central.tex
+70  ORIGINAL    notas/mar-sal-e-sol.tex
+71  ORIGINAL    notas/heterotopia-especulativa.tex
+72  ORIGINAL    notas/metodos.tex
+73  ORIGINAL    notas/dif-faces.tex
+74  NOVA N10    notas/prova-do-odor.tex
+75  ORIGINAL    notas/ciencias-diferenciais.tex
+76  ORIGINAL    notas/corpo-de-encontro.tex
